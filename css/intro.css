@@ -83,7 +83,7 @@
 .login-content .sns-box .bubble-box {
   position: absolute;
   top: -70px;
-  left: 50;
+  left: 50%;
   transform: translateX(-50%);
 }
 .login-content .sns-box p.speed-join {

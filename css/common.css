@@ -36,6 +36,7 @@ span,
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 input {
@@ -44,6 +45,11 @@ input {
   padding: 0 10px;
   border: 1px solid #d4d9dd;
   border-radius: 4px;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 input::placeholder {
@@ -170,6 +176,8 @@ button {
 nav.nav-wrap {
   position: fixed;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 56px;
   width: 100%;
   max-width: 500px;
