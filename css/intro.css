@@ -1,0 +1,238 @@
+.intro-page-wrap {
+  padding: 80px;
+  text-align: center;
+}
+
+.intro-page-wrap .intro-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.intro-page-wrap .silde-box {
+  padding-bottom: 40px;
+}
+
+.intro-page-wrap .silde-box img {
+  width: 100%;
+}
+
+.intro-page-wrap .intro-desc {
+  padding: 40px 0 30px;
+  color: #aeb2b9;
+  line-height: 18px;
+}
+
+.intro-page-wrap a.guide-link {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.intro-page-wrap .btn-start {
+  background-color: #2a3548;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  max-width: 305px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.login-page-wrap header {
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 56px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.login-page-wrap header button img {
+  width: 19px;
+}
+
+.login-page-wrap header button.btn-header-left {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+
+.login-page-wrap header h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.login-content {
+  padding-top: 200px;
+  width: 100%;
+  max-width: 305px;
+  margin: 0 auto;
+}
+
+.login-content .sns-box {
+  position: relative;
+}
+
+.login-content .sns-box .bubble-box {
+  position: absolute;
+  top: -70px;
+  left: 50;
+  transform: translateX(-50%);
+}
+.login-content .sns-box p.speed-join {
+  position: relative;
+  width: max-content;
+  height: 50px;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 46px;
+  background-color: #fff;
+  border: 1px solid #d4d9dd;
+  border-radius: 40px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.login-content .sns-box p.speed-join::after {
+  content: "";
+  width: 13px;
+  height: 11px;
+  position: absolute;
+  bottom: -11px;
+  left: calc(50% - 6px);
+  background: url(../asset/images/img-bubble-point.png);
+  background-size: 100%;
+}
+
+.login-content .sns-box p.speed-join img {
+  display: inline-block;
+  width: 16px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.login-content .sns-box button {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.login-content .sns-box button.line {
+  background: #06c755 url(../asset/images/icon-my-line.png) 10px center / 36px
+    36px no-repeat;
+}
+.login-content .sns-box button.x {
+  background: #000 url(../asset/images/icon-my-x.png) 10px center / 36px 36px
+    no-repeat;
+}
+.login-content .sns-box button.facebook {
+  background: #1877f2 url(../asset/images/icon-my-facebook.png) 10px center /
+    36px 36px no-repeat;
+}
+.login-content .sns-box button.apple {
+  background: #000 url(../asset/images/icon-my-apple.png) 10px center / 36px
+    36px no-repeat;
+}
+
+.login-content a.guest {
+  display: block;
+  margin-top: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.signin-page-wrap header h2 i {
+  color: #ff43ca;
+}
+
+.signin-content {
+  text-align: center;
+}
+
+.signin-content .profile-title {
+  padding-top: 80px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.signin-content .profile-desc {
+  display: block;
+  padding-top: 10px;
+  color: #aeb2b9;
+}
+
+.signin-content .add-thumb-box {
+  position: relative;
+  margin: 40px auto 20px auto;
+  width: 115px;
+}
+
+.signin-content .add-thumb-box img.thumb {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.signin-content .add-thumb-box button.btn-upload {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.signin-content .add-thumb-box button.btn-upload img {
+  width: 100%;
+}
+
+.signin-content .inp-name {
+  display: block;
+  width: 100%;
+  max-width: 305px;
+  margin: 0 auto;
+  border: 1px solid #d4d9dd;
+  height: 50px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.signin-content .inp-name.warning {
+  border-color: #f00;
+}
+
+.signin-content .valid {
+  display: block;
+  padding-top: 10px;
+  color: #979797;
+}
+
+.signin-content .valid.warning {
+  color: #f00;
+}
+
+.signin-content .inp-name::placeholder {
+  color: #aeb2b9;
+}
+
+.signin-content .agree-title {
+  padding: 80px 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.signin-content .agree-img {
+  margin-top: 45px;
+  width: 245px;
+}

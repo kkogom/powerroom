@@ -1,0 +1,280 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body,
+table,
+th,
+td,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+textarea,
+blockquote,
+span,
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2a3548;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #d4d9dd;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: #aeb2b9;
+}
+
+/* 체크박스와 라벨의 기본 스타일 */
+input[type="checkbox"] {
+  display: none;
+}
+.custom-checkbox {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #d4d9dd;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 28px;
+  height: 28px;
+  background: url(../asset/images/icon-controls-checkbox-on.png);
+  background-size: 100%;
+  border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.common-wrap {
+  max-width: 500px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+.common-wrap header {
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 56px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.common-wrap header.line {
+  border-bottom: 1px solid #ebf0fb;
+}
+
+.common-wrap header h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.common-wrap header button img {
+  width: 19px;
+}
+
+.common-wrap header button.btn-header-left {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+.common-wrap header button.btn-header-right {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+}
+
+.common-wrap .common-content {
+  padding-top: 56px;
+}
+
+.common-wrap.full-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.common-wrap.full-page .common-footer {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.common-wrap.full-page .common-footer button {
+  height: 50px;
+  width: 100%;
+  max-width: 305px;
+  margin: 0 auto;
+  background-color: #d4d9dd;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.common-wrap.full-page .common-footer button.on {
+  background-color: #2a3548;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  text-transform: none;
+  vertical-align: top;
+  background: none;
+  cursor: pointer;
+}
+
+nav.nav-wrap {
+  position: fixed;
+  bottom: 0;
+  height: 56px;
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  background-color: #fff;
+  border-top: 1px solid #ebf0fb;
+}
+nav.nav-wrap button {
+  display: inline-block;
+  width: 20%;
+  height: 56px;
+  font-size: 11px;
+  text-align: center;
+  color: #d4d9dd;
+}
+
+nav.nav-wrap button img {
+  width: 18px;
+  margin-bottom: 4px;
+}
+
+nav.nav-wrap button.on {
+  color: #2a3548;
+}
+
+.silde-box {
+  position: relative;
+}
+.silde-box .paging {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  height: 21px;
+  padding: 0 10px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+}
+.silde-box .paging i {
+  color: #fff;
+}
+
+.exp-label-box label {
+  display: inline-block;
+  padding: 0 10px;
+  margin-right: 10px;
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+  border-radius: 14px;
+}
+.exp-label-box .date {
+  background-color: #000;
+}
+.exp-label-box .count {
+  background-color: #fff;
+  color: #6d7684;
+}
+.exp-label-box .progress {
+  background-color: #ff43ca;
+}
+.exp-label-box .progress.end {
+  background-color: #aeb2b9;
+}
+.exp-label-box .progress.winner {
+  background-color: #2a3548;
+}
+
+.popup-dim-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.popup-dim-wrap .popup-content-wrap {
+  max-width: 500px;
+  width: 100%;
+}
+.popup-dim-wrap .popup-content-wrap .popup-content img {
+  width: 100%;
+  border-radius: 18px 18px 0;
+}
+
+.popup-dim-wrap .popup-content-wrap .popup-bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 20px;
+  height: 58px;
+}
+
+.popup-dim-wrap .popup-content-wrap .popup-bottom button {
+  color: #aeb2b9;
+}
+
+.popup-dim-wrap .popup-content-wrap .popup-bottom button.active {
+  color: #2a3548;
+  font-weight: 700;
+}
