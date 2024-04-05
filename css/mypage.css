@@ -1,0 +1,283 @@
+.mypage-content {
+  background-color: #f6f9ff;
+}
+
+.mypage-box.background {
+  height: calc(100vh - 56px);
+}
+
+.mypage-box .profile-box {
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ebf0fb;
+  margin-bottom: 10px;
+}
+
+.mypage-box .profile-box .name {
+  font-weight: 700;
+}
+.mypage-box .profile-box .btn-edit {
+  height: 30px;
+  margin-top: 15px;
+  padding: 0 10px;
+  font-size: 10px;
+  border: 1px solid #ebf0fb;
+  border-radius: 4px;
+}
+
+.mypage-box .profile-box .thumb {
+  position: relative;
+}
+
+.mypage-box .profile-box .thumb > img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.mypage-box .profile-box .thumb .btn-camera {
+  position: absolute;
+  right: calc(50% - 60px);
+  bottom: 20px;
+  width: 40px;
+}
+
+.mypage-box .profile-box .thumb .btn-camera img {
+  width: 100%;
+}
+
+.mypage-box .profile-box .thumb .mypage-box .tab-box {
+  padding: 10px 5px 0 5px;
+  border-bottom: 1px solid#EBF0FB;
+  background-color: #fff;
+}
+
+.mypage-box .profile-box input {
+  text-align: center;
+}
+
+.mypage-box .tab-box button {
+  width: 50%;
+  height: 44px;
+  color: #aeb2b9;
+  font-weight: 700;
+}
+
+.mypage-box .tab-box button.on {
+  color: #2a3548;
+  border-bottom: 2px solid #2a3548;
+}
+
+.mypage-box .no-list {
+  padding: 100px 0;
+  text-align: center;
+  color: #aeb2b9;
+  font-weight: 700;
+}
+
+.mypage-box .self-box {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebf0fb;
+  margin-bottom: 10px;
+}
+
+.mypage-box .self-box p {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.mypage-box .detail-add-box {
+  background-color: #fff;
+}
+
+.mypage-box .detail-add-box li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-right: 40px;
+  border-bottom: 1px solid #ebf0fb;
+  background: url(/asset/images/icon-more.png) no-repeat calc(100% - 25px)
+    center / 6px 12px;
+}
+
+.mypage-box .detail-add-box li .title {
+  font-weight: 700;
+}
+
+.mypage-page-wrap .floating-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+}
+.mypage-page-wrap .floating-footer button {
+  height: 60px;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #2a3548;
+}
+
+.mypage-page-wrap .floating-footer button:disabled {
+  background-color: #ebf0fb;
+}
+
+.mypage-page-wrap .mypage-popup {
+  padding: 20px;
+  padding-bottom: 100px;
+  background-color: #fff;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.mypage-popup .form-box + .form-box {
+  margin-top: 20px;
+}
+
+.mypage-popup .form-box .form-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.mypage-popup .form-box .form-title span {
+  color: #f00;
+}
+.mypage-popup .form-box .form-title span.noti {
+  color: #979797;
+  font-weight: normal;
+}
+
+.mypage-popup .form-box .form-item.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.mypage-popup .form-box .form-item.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.mypage-popup .form-box .form-item button {
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #d4d9dd;
+  font-weight: 700;
+}
+
+.mypage-popup .form-box .form-item button.on {
+  background-color: #2a3548;
+  color: #fff;
+}
+.mypage-popup .form-box .form-item .checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mypage-popup .form-box .form-item .checkbox p {
+  padding-left: 10px;
+}
+
+.setting-box {
+  background-color: #fff;
+}
+.setting-box li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  line-height: 60px;
+  border-bottom: 1px solid #ebf0fb;
+  background: url(/asset/images/icon-more.png) no-repeat calc(100% - 25px)
+    center / 6px 12px;
+}
+
+.setting-box .toggle {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 31px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.setting-box .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e6e6e6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 31px;
+}
+
+.setting-box .slider:before {
+  position: absolute;
+  content: "";
+  height: 27px;
+  width: 27px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3ss;
+  border-radius: 50%;
+}
+
+.setting-box input:checked + .slider {
+  background-color: #ff43ca;
+}
+
+.setting-box input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+.setting-box .btn-withdraw {
+  width: 100%;
+  margin-top: 30px;
+  color: #aeb2b9;
+  text-decoration: underline;
+}
+
+.withdraw-box {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.withdraw-box .form-box + .form-box {
+  margin-top: 20px;
+}
+
+.withdraw-box .form-box .form-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.withdraw-box .form-item.option-box {
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #d4d9dd;
+  border-radius: 4px;
+  background: #fff url(../asset/images/icon-dropdown.png) no-repeat
+    calc(100% - 21px) center / 12px 6px;
+}
+
+.mypage-page-wrap .withdraw-popup li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  line-height: 60px;
+  border-bottom: 1px solid #ebf0fb;
+  background-color: #fff;
+}

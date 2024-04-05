@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <title>POWER ROOM</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/mypage.css" />
+  </head>
+  <body>
+    <div class="mypage-page-wrap common-wrap">
+      <header class="line">
+        <button type="button" class="btn-header-left">
+          <img src="../asset/images/icon-top-back.png" alt="" />
+        </button>
+        <h2>体験団</h2>
+        <button type="button" class="btn-header-right">
+          <img src="../asset/images/icon-top-settings.png" alt="" />
+        </button>
+      </header>
+      <div class="mypage-content common-content">
+        <div class="mypage-box">
+          <div class="profile-box edit-mode">
+            <div class="thumb">
+              <img src="https://picsum.photos/115" alt="" />
+              <button type="button" class="btn-camera">
+                <img src="/asset/images/img-camera.png" alt="" />
+              </button>
+            </div>
+            <input type="text" class="name" value="アントニー" />
+          </div>
+          <div class="self-box">
+            <p>自己紹介</p>
+            <textarea>今年のトレすべて収ンドはすべて録！</textarea>
+          </div>
+          <ul class="detail-add-box">
+            <li><span class="title">基本情報</span><span>設定</span></li>
+            <li>
+              <span class="title">ソーシャル·チャンネル</span><span>設定</span>
+            </li>
+            <li><span class="title">皮膚情報</span><span>設定</span></li>
+            <li><span class="title">お届け先管理</span><span>設定</span></li>
+          </ul>
+          <div class="floating-footer">
+            <button type="type">貯蔵</button>
+            <!-- 비활성화 버튼
+            <button type="type" disabled>貯蔵</button>
+          --></div>
+        </div>
+      </div>
+
+      <!-- 기본정보 팝업 -->
+      <div class="popup-dim-wrap">
+        <div class="popup-content-wrap">
+          <div class="popup-header">
+            ソーシャル·チャンネル
+            <button type="button">
+              <img src="../asset/images/icon-top-close.png" alt="" />
+            </button>
+          </div>
+          <div class="popup-content mypage-popup">
+            <div class="form-box">
+              <p class="form-title">肌タイプ</p>
+              <div class="form-item grid2">
+                <button type="button">乾燥肌</button
+                ><button type="button" class="on">中性肌</button
+                ><button type="button">知性</button
+                ><button type="button">複合性</button>
+              </div>
+            </div>
+            <div class="form-box">
+              <p class="form-title">パーソナルカラー</p>
+              <div class="form-item grid2">
+                <button type="button">ボムウォームトーン</button
+                ><button type="button">夏クールトーン</button
+                ><button type="button">秋のウォームトーン</button
+                ><button type="button" class="on">冬のクールトーン</button>
+              </div>
+            </div>
+            <div class="form-box">
+              <p class="form-title">
+                肌の悩み (0/9) <span class="noti">*重複選択可能</span>
+              </p>
+              <div class="form-item grid3">
+                <button type="button">毛穴</button
+                ><button type="button">しわ</button>
+                <button type="button">くすみ</button
+                ><button type="button" class="on">乾燥</button>
+                <button type="button" class="on">敏感性</button>
+                <button type="button">トラブル</button
+                ><button type="button">アトピー</button>
+                <button type="button">皮脂過多</button>
+              </div>
+            </div>
+            <div class="form-box">
+              <p class="form-title">皮膚トーン</p>
+              <div class="form-item grid3">
+                <button type="button">黄色の方</button
+                ><button type="button" class="on">普通</button>
+                <button type="button">赤い方</button>
+              </div>
+            </div>
+            <div class="form-box">
+              <p class="form-title">肌の明るさ</p>
+              <div class="form-item grid3">
+                <button type="button">13号以下</button
+                ><button type="button" class="on">17号</button>
+                <button type="button">21号</button>
+                <button type="button">23号</button>
+                <button type="button">25号以上</button>
+              </div>
+            </div>
+          </div>
+          <div class="floating-footer">
+            <button type="type">貯蔵</button>
+            <!-- 비활성화 버튼
+            <button type="type" disabled>貯蔵</button>
+          --></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

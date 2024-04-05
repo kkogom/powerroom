@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>POWER ROOM</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/mypage.css" />
+  </head>
+  <body>
+    <div class="mypage-page-wrap common-wrap">
+      <header class="line">
+        <button type="button" class="btn-header-left">
+          <img src="../asset/images/icon-top-back.png" alt="" />
+        </button>
+        <h2>体験団</h2>
+        <button type="button" class="btn-header-right">
+          <img src="../asset/images/icon-top-settings.png" alt="" />
+        </button>
+      </header>
+      <div class="mypage-content common-content">
+        <div class="mypage-box">
+          <div class="profile-box edit-mode">
+            <div class="thumb">
+              <img src="https://picsum.photos/115" alt="" />
+              <button type="button" class="btn-camera">
+                <img src="/asset/images/img-camera.png" alt="" />
+              </button>
+            </div>
+            <input type="text" class="name" value="アントニー" />
+          </div>
+          <div class="self-box">
+            <p>自己紹介</p>
+            <textarea>今年のトレすべて収ンドはすべて録！</textarea>
+          </div>
+          <ul class="detail-add-box">
+            <li><span class="title">基本情報</span><span>設定</span></li>
+            <li>
+              <span class="title">ソーシャル·チャンネル</span><span>設定</span>
+            </li>
+            <li><span class="title">皮膚情報</span><span>設定</span></li>
+            <li><span class="title">お届け先管理</span><span>設定</span></li>
+          </ul>
+          <div class="floating-footer">
+            <button type="type">貯蔵</button>
+            <!-- 비활성화 버튼
+            <button type="type" disabled>貯蔵</button>
+          --></div>
+        </div>
+      </div>
+
+      <!-- 기본정보 팝업 -->
+      <div class="popup-dim-wrap">
+        <div class="popup-content-wrap">
+          <div class="popup-header">
+            基本情報
+            <button type="button">
+              <img src="../asset/images/icon-top-close.png" alt="" />
+            </button>
+          </div>
+          <div class="popup-content mypage-popup">
+            <div class="form-box">
+              <p class="form-title">性別 <span>*</span></p>
+              <div class="form-item grid2">
+                <button type="button">男性</button
+                ><button type="button" class="on">女性</button>
+              </div>
+            </div>
+            <div class="form-box">
+              <p class="form-title">生年月日 <span>*</span></p>
+              <div class="form-item">
+                <input type="text" placeholder="生年月日を入力してください" />
+                <div class="checkbox">
+                  <input type="checkbox" id="custom-checkbox1" />
+                  <label for="custom-checkbox1" class="custom-checkbox"></label>
+                  <p>プロフィールに表示しない</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-footer">
+            <button type="type">貯蔵</button>
+            <!-- 비활성화 버튼
+            <button type="type" disabled>貯蔵</button>
+          --></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>POWER ROOM</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/mypage.css" />
+  </head>
+  <body>
+    <div class="mypage-page-wrap common-wrap">
+      <header class="line">
+        <button type="button" class="btn-header-left">
+          <img src="../asset/images/icon-top-back.png" alt="" />
+        </button>
+        <h2>設定</h2>
+      </header>
+      <div class="mypage-content common-content">
+        <div class="withdraw-box">
+          <div class="form-box">
+            <p class="form-title">生年月日</p>
+            <div class="form-item option-box">
+              <p>退会理由を選択してください</p>
+            </div>
+          </div>
+          <div class="form-box">
+            <p class="form-title">詳しく</p>
+            <div class="form-item">
+              <textarea
+                placeholder="上記を選んだ理由について、よろしければ詳しく聞かせてください"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="floating-footer">
+          <button type="type">脱退する</button>
+          <!-- 비활성화 버튼
+          <button type="type" disabled>脱退する</button>
+        --></div>
+        <!-- 회원탈퇴 팝업 -->
+        <div class="popup-dim-wrap">
+          <div class="popup-content-wrap">
+            <div class="popup-header">
+              脱退事由
+              <button type="button">
+                <img src="../asset/images/icon-top-close.png" alt="" />
+              </button>
+            </div>
+            <div class="popup-content withdraw-popup">
+              <ul>
+                <li>コンテンツが合ってた</li>
+                <li>使いづらかった</li>
+                <li>トラブルに巻き込まれた</li>
+                <li>アカウントを新しく作りたい</li>
+                <li>その他</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
