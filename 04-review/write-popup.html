@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <title>POWER ROOM</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/review.css" />
+  </head>
+  <body>
+    <div class="review-page-wrap common-wrap">
+      <header class="line">
+        <button type="button" class="btn-header-left">
+          <img src="../asset/images/icon-top-close.png" alt="" />
+        </button>
+        <h2>レビュー作成</h2>
+      </header>
+      <div class="review-content common-content">
+        <div class="review-write-box">
+          <div class="product-info-box">
+            <img src="https://picsum.photos/100" alt="" />
+            <div class="info">
+              <p>セラミックスキンパーフェクタークッション</p>
+              <span>AMUSE</span>
+            </div>
+          </div>
+          <div class="rating-box">
+            <div class="category-btn-box">
+              <button type="button" class="on">直接購入</button
+              ><button type="button">製品協賛</button>
+            </div>
+
+            <div class="box-title">オプション選択</div>
+            <div class="option-box">
+              <img src="https://picsum.photos/40" alt="" />
+              <p>オプション全体 beige</p>
+            </div>
+            <div class="box-title">
+              星占
+              <div class="star-box">
+                <img src="../asset/images/icon-star-on.png" alt="on" /><img
+                  src="../asset/images/icon-star-on.png"
+                  alt="on"
+                /><img src="../asset/images/icon-star-on.png" alt="on" /><img
+                  src="../asset/images/icon-star-on.png"
+                  alt="on"
+                /><img src="../asset/images/icon-star-off.png" alt="off" />
+              </div>
+            </div>
+            <div class="star-guide-box">
+              <p class="box-title">星占いガイド</p>
+              <p class="guide">
+                星5 : 最高です。 おすすめします<br />星4 : 良かったです。
+                再購入の意思あり<br />星3 : 普通です。 再購入は悩みます<br />星2
+                : 残念です。 私には合いません<br />星1
+                :悪い経験。おすすめしたくないです
+              </p>
+            </div>
+          </div>
+
+          <div class="review-write-form">
+            <div class="form-item">
+              <div class="box-title">一行評</div>
+              <input type="text" placeholder="一行評価を入力してください" />
+            </div>
+            <div class="form-item">
+              <div class="box-title">内容</div>
+              <textarea placeholder="内容を入力してください"></textarea>
+            </div>
+            <div class="upload-box">
+              <div class="inner-box">
+                <button type="button" class="btn-camera">
+                  <img src="../asset/images/icon-review-photo.png" /></button
+                ><button type="button" class="btn-camera">
+                  <img src="../asset/images/icon-review-movie.png" />
+                </button>
+
+                <ul>
+                  <li>
+                    <img src="https://picsum.photos/60" alt="" />
+                    <button type="button" class="btn-delete">
+                      <img
+                        src="../asset/images/icon-review-photo-delete.png"
+                        alt=""
+                      />
+                    </button>
+                  </li>
+                  <li>
+                    <img src="https://picsum.photos/60" alt="" />
+                    <button type="button" class="btn-delete">
+                      <img
+                        src="../asset/images/icon-review-photo-delete.png"
+                        alt=""
+                      />
+                    </button>
+                  </li>
+                  <li>
+                    <img src="https://picsum.photos/60" alt="" />
+                    <button type="button" class="btn-delete">
+                      <img
+                        src="../asset/images/icon-review-photo-delete.png"
+                        alt=""
+                      />
+                    </button>
+                  </li>
+                  <li>
+                    <img src="https://picsum.photos/60" alt="" />
+                    <button type="button" class="btn-delete">
+                      <img
+                        src="../asset/images/icon-review-photo-delete.png"
+                        alt=""
+                      />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-list-box">
+            <button type="button">ボディ</button
+            ><button type="button">パック/マスク</button
+            ><button type="button">クレンジング</button
+            ><button type="button" class="on">サンケア</button
+            ><button type="button">クリーム</button
+            ><button type="button">ローション</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 옵션선택 팝업 -->
+      <div class="popup-dim-wrap">
+        <div class="popup-content-wrap">
+          <div class="popup-header">
+            オプション選択
+            <button type="button">
+              <img src="../asset/images/icon-top-close.png" alt="" />
+            </button>
+          </div>
+          <div class="popup-content option-popup">
+            <ul>
+              <li>
+                <img src="https://picsum.photos/40" alt="" /><span
+                  >オプション全体 beige</span
+                >
+              </li>
+              <li class="on">
+                <img src="https://picsum.photos/40" alt="" /><span
+                  >オプション全体 purple</span
+                >
+              </li>
+              <li>
+                <img src="https://picsum.photos/40" alt="" /><span
+                  >オプション全体 red</span
+                >
+              </li>
+              <li>
+                <img src="https://picsum.photos/40" alt="" /><span
+                  >オプション全体 black</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="floating-footer">
+        <button type="type">作成する</button>
+        <!-- 비활성화 버튼
+        <button type="type" disabled>作成する</button>
+      --></div>
+    </div>
+  </body>
+</html>

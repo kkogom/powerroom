@@ -1,0 +1,133 @@
+.magazine-content {
+  background-color: #f6f9ff;
+}
+.magazine-content.no-list {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magazine-content ul {
+  padding: 20px;
+  padding-bottom: 130px;
+}
+
+.magazine-content li {
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.magazine-content li + li {
+  margin-top: 15px;
+}
+
+.magazine-content li .name-date {
+  display: flex;
+}
+
+.magazine-content li .name-date .name {
+  font-weight: bold;
+}
+.magazine-content li .name-date .name img {
+  width: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.magazine-content li .name-date .date {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  color: #aeb2b9;
+}
+
+.magazine-content li .thumb {
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.magazine-content li .subject {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.magazine-content li .desc {
+  color: #aeb2b9;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.magazine-content .no-list {
+  margin-top: -56px;
+  text-align: center;
+  color: #aeb2b9;
+  font-weight: 700;
+}
+
+.magazine-content .magazine-detail {
+  position: relative;
+}
+
+.magazine-content .magazine-detail .name-date {
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(235, 240, 251, 0.4);
+}
+
+.magazine-content .magazine-detail .name-date .name {
+  font-weight: bold;
+}
+.magazine-content .magazine-detail .name-date .name img {
+  width: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.magazine-content .magazine-detail .name-date .date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #aeb2b9;
+}
+
+.magazine-content .magazine-detail .subject {
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebf0fb;
+}
+
+.magazine-content .content {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.magazine-content .content img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.magazine-content .content p {
+  color: #aeb2b9;
+  line-height: 18px;
+}

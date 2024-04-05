@@ -1,0 +1,186 @@
+.rank-content {
+  height: 100%;
+  background-color: #f6f9ff;
+}
+
+.rank-content .rank-sort-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+  padding: 10px 50px 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebf0fb;
+}
+
+.rank-content .rank-sort-box.off {
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.rank-content .rank-sort-box button.sort {
+  height: 32px;
+  padding: 0 16px;
+  border: 1px solid #ebf0fb;
+  border-radius: 16px;
+  color: #aeb2b9;
+  flex-shrink: 0;
+}
+
+.rank-content .rank-sort-box button.sort.on {
+  color: #ff43ca;
+  font-weight: 700;
+  border-color: #ff43ca;
+}
+
+.rank-content .rank-sort-box button.active {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.rank-content .rank-sort-box.off button.active::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  width: 64px;
+  height: 52px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, #fff 30%);
+  z-index: -1;
+}
+
+.rank-content .rank-sort-box button.active img {
+  width: 100%;
+}
+
+.rank-content .rank-sort-box.off button.active img {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.rank-content .rank-list {
+  padding: 25px 20px 130px 20px;
+  background-color: #f6f9ff;
+}
+
+.rank-content .rank-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebf0fb;
+}
+
+.rank-content .rank-list li + li {
+  padding-top: 20px;
+}
+
+.rank-content .rank-list li label {
+  width: 42px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.rank-content .rank-list li label i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #2a3548;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 19px;
+  color: #fff;
+}
+
+.rank-content .rank-list li:first-child .thumb {
+  position: relative;
+  width: 162px;
+}
+
+.rank-content .rank-list li:first-child label {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.rank-content .rank-list li:first-child label i {
+  position: relative;
+  background-color: #ffb800;
+  z-index: 1;
+}
+
+.rank-content .rank-list li:first-child label i::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -1px;
+  width: 22px;
+  height: 7.5px;
+  background: url(../asset/images/icon-ranking-top-ribbon.png) no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.rank-content .rank-list li:nth-child(2) label i,
+.rank-content .rank-list li:nth-child(3) label i {
+  background-color: #ff43ca;
+}
+
+.rank-content .rank-list li .thumb {
+  width: 85px;
+  flex-shrink: 0;
+}
+.rank-content .rank-list li .thumb img {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.rank-content .rank-list li .info-box {
+  margin-left: 15px;
+}
+
+.rank-content .rank-list li .info-box .name {
+  display: block;
+  margin-bottom: 5px;
+  color: #6d7684;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.rank-content .rank-list li .info-box p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.rank-content .rank-list li .info-box .star-box {
+  display: block;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.rank-content .rank-list li .info-box .star-box img {
+  width: 14px;
+  margin-right: 3px;
+  vertical-align: bottom;
+}
+
+.rank-content .rank-list li .info-box .price {
+  display: block;
+  color: #6d7684;
+  font-size: 10px;
+}
+
+.rank-content .no-list {
+  padding-top: 100px;
+  text-align: center;
+  color: #aeb2b9;
+  font-weight: 700;
+}
