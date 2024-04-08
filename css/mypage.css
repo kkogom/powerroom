@@ -167,8 +167,8 @@
 }
 
 .mypage-popup .form-box .form-item button.on {
-  background-color: #2a3548;
-  color: #fff;
+  color: #ff43ca;
+  border-color: #ff43ca;
 }
 .mypage-popup .form-box .form-item .checkbox {
   display: flex;

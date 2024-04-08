@@ -282,7 +282,7 @@
 
 .popup-content-wrap .option-popup li.on {
   background: url(../asset/images/icon-option-check.png) no-repeat
-    calc(100% - 25px) center / 14px 9px;
+    calc(100% - 25px) center / 14px 14px;
 }
 
 .review-write-box .product-info-box {
@@ -328,9 +328,8 @@
   font-weight: 700;
 }
 .review-write-box .rating-box .category-btn-box button.on {
-  background-color: #2a3548;
-  border-color: #2a3548;
-  color: #fff;
+  border-color: #ff43ca;
+  color: #ff43ca;
 }
 .review-write-box .box-title {
   position: relative;
@@ -447,9 +446,8 @@
 }
 
 .review-write-box .category-list-box button.on {
-  background-color: #2a3548;
-  color: #fff;
-  border-color: #2a3548;
+  color: #ff43ca;
+  border-color: #ff43ca;
 }
 
 .review-privacy-box {
@@ -486,6 +484,6 @@
   font-weight: 700;
 }
 .review-privacy-box .form-box .form-item button.on {
-  background-color: #2a3548;
-  color: #fff;
+  color: #ff43ca;
+  border-color: #ff43ca;
 }

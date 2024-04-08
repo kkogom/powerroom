@@ -1,5 +1,5 @@
 .intro-page-wrap {
-  padding: 80px;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -14,12 +14,21 @@
   padding-bottom: 40px;
 }
 
+.intro-page-wrap .slide-desc {
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
 .intro-page-wrap .silde-box img {
   width: 100%;
 }
 
 .intro-page-wrap .intro-desc {
-  padding: 40px 0 30px;
+  max-width: 375px;
+  padding: 0 0 30px;
+  margin: 0 auto;
   color: #aeb2b9;
   line-height: 18px;
 }
