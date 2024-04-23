@@ -10,8 +10,6 @@
   padding: 20px 40px;
   text-align: center;
   background-color: #fff;
-  border-bottom: 1px solid #ebf0fb;
-  margin-bottom: 10px;
 }
 
 .mypage-box .profile-box .name {
@@ -53,6 +51,101 @@
 
 .mypage-box .profile-box input {
   text-align: center;
+}
+
+.mypage-box .mission-wrap {
+  padding: 20px 20px 30px 20px;
+  border-top: 1px solid #ebf0fb;
+  background-color: #fff;
+}
+.mypage-box .mission-wrap .mission-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.mypage-box .mission-wrap .mission-box {
+  border-radius: 8px;
+  border: 1px solid #2a3548;
+}
+
+.mypage-box .mission-wrap .mission-box + .mission-box {
+  margin-top: 10px;
+}
+
+.mypage-box .mission-wrap .mission-box .date {
+  padding: 15px;
+  font-weight: 700;
+  color: #aeb2b9;
+  font-size: 12px;
+  text-align: right;
+  border-bottom: 1px solid #ebf0fb;
+}
+.mypage-box .mission-wrap .mission-box .review-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.mypage-box .mission-wrap .mission-box .review-item img {
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.mypage-box .mission-wrap .mission-box .review-item p {
+  margin-bottom: 4px;
+  color: #6d7684;
+  font-size: 12px;
+  font-weight: 700px;
+}
+
+.mypage-box .mission-wrap .mission-box .review-item span {
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.mypage-box .mission-wrap .mission-box .btn-complete {
+  background-color: #2a3548;
+  color: #fff;
+  width: calc(100% - 30px);
+  height: 40px;
+  border-radius: 4px;
+  margin: 0 15px;
+}
+.mypage-box .mission-wrap .mission-box .btn-complete:disabled {
+  background-color: #ebf0fb;
+}
+
+.mypage-box .mission-wrap .mission-box .form-box {
+  padding: 15px;
+}
+
+.mypage-box .mission-wrap .mission-box .form-item {
+  display: flex;
+  gap: 5px;
+}
+
+.mypage-box .mission-wrap .mission-box .form-item input {
+  height: 40px;
+  font-size: 12px;
+}
+
+.mypage-box .mission-wrap .mission-box .form-item + .form-item {
+  margin-top: 10px;
+}
+.mypage-box .mission-wrap .mission-box .form-item .btn-add {
+  width: 65px;
+  height: 40px;
+  flex-shrink: 0;
+  font-size: 12px;
+  border: 1px solid #2a3548;
+  border-radius: 4px;
+}
+
+.mypage-box .tab-box {
+  background-color: #fff;
+  border-top: 1px solid #ebf0fb;
 }
 
 .mypage-box .tab-box button {
