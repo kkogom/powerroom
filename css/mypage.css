@@ -5,6 +5,58 @@
 .mypage-box.background {
   height: calc(100vh - 56px);
 }
+.mypage-box .tool-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+}
+.mypage-box .tool-box .sns-box img {
+  margin-right: 3px;
+}
+
+.mypage-box .tool-box .btn-edit {
+  height: 30px;
+  padding: 0 10px;
+  font-size: 10px;
+  border: 1px solid #ebf0fb;
+  border-radius: 4px;
+}
+
+.mypage-box .intro-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 20px 20px 20px;
+  background-color: #fff;
+}
+
+.mypage-box .intro-box .name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.mypage-box .intro-box .comment {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 18px;
+}
+
+.mypage-box .intro-box .thumb {
+  position: relative;
+  margin-left: 20px;
+}
+
+.mypage-box .intro-box .thumb > img {
+  border-radius: 50%;
+}
 
 .mypage-box .profile-box {
   padding: 20px 40px;
@@ -53,99 +105,164 @@
   text-align: center;
 }
 
-.mypage-box .mission-wrap {
-  padding: 20px 20px 30px 20px;
-  border-top: 1px solid #ebf0fb;
+.mypage-box .my-experience-box {
   background-color: #fff;
+  padding: 20px;
 }
-.mypage-box .mission-wrap .mission-title {
+
+.mypage-box .my-experience-box .title {
   margin-bottom: 10px;
   font-weight: 700;
 }
-.mypage-box .mission-wrap .mission-box {
+
+.mypage-box .my-experience-box .ex-ing-box {
+  display: flex;
+  background-color: #222;
+  padding: 20px 0;
   border-radius: 8px;
-  border: 1px solid #2a3548;
+  text-align: center;
 }
 
-.mypage-box .mission-wrap .mission-box + .mission-box {
-  margin-top: 10px;
+.mypage-box .my-experience-box .ex-ing-box > div {
+  position: relative;
+  width: 33.33%;
 }
 
-.mypage-box .mission-wrap .mission-box .date {
-  padding: 15px;
-  font-weight: 700;
+.mypage-box .my-experience-box .ex-ing-box > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 43px;
+  width: 1px;
+  background-color: #333;
+}
+
+.mypage-box .my-experience-box .ex-ing-box span {
+  display: block;
   color: #aeb2b9;
   font-size: 12px;
-  text-align: right;
-  border-bottom: 1px solid #ebf0fb;
 }
-.mypage-box .mission-wrap .mission-box .review-item {
+
+.mypage-box .my-experience-box .ex-ing-box span.num {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.mypage-box .my-experience-box .ex-ing-box span.num.on {
+  color: #ff43ca;
+}
+
+.mypage-box .my-experience-box ul {
+  margin-top: 20px;
+}
+
+.mypage-box .my-experience-box li .product-box {
   display: flex;
   align-items: center;
-  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.mypage-box .mission-wrap .mission-box .review-item img {
+.mypage-box .my-experience-box li img.thumb {
+  margin-right: 15px;
   border-radius: 8px;
-  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.mypage-box .mission-wrap .mission-box .review-item p {
-  margin-bottom: 4px;
-  color: #6d7684;
+.mypage-box .my-experience-box li p {
+  color: #979797;
+  font-weight: 700;
   font-size: 12px;
-  font-weight: 700px;
+}
+.mypage-box .my-experience-box li p + p {
+  margin-top: 5px;
 }
 
-.mypage-box .mission-wrap .mission-box .review-item span {
-  font-size: 12px;
+.mypage-box .my-experience-box li p.name {
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.mypage-box .my-experience-box li p.desc {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
 }
-
-.mypage-box .mission-wrap .mission-box .btn-complete {
-  background-color: #2a3548;
-  color: #fff;
-  width: calc(100% - 30px);
-  height: 40px;
-  border-radius: 4px;
-  margin: 0 15px;
-}
-.mypage-box .mission-wrap .mission-box .btn-complete:disabled {
-  background-color: #ebf0fb;
-}
-
-.mypage-box .mission-wrap .mission-box .form-box {
-  padding: 15px;
-}
-
-.mypage-box .mission-wrap .mission-box .form-item {
+.mypage-box .my-experience-box li .btn-box {
   display: flex;
-  gap: 5px;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
 }
-
-.mypage-box .mission-wrap .mission-box .form-item input {
-  height: 40px;
-  font-size: 12px;
-}
-
-.mypage-box .mission-wrap .mission-box .form-item + .form-item {
-  margin-top: 10px;
-}
-.mypage-box .mission-wrap .mission-box .form-item .btn-add {
-  width: 65px;
-  height: 40px;
-  flex-shrink: 0;
-  font-size: 12px;
-  border: 1px solid #2a3548;
+.mypage-box .my-experience-box li .btn-box button {
+  width: calc(50% - 5px);
+  height: 50px;
+  border: 1px solid #d4d9dd;
   border-radius: 4px;
+  font-weight: 700;
+}
+.mypage-box .my-experience-box li .btn-box button.wide {
+  width: 100%;
+}
+.mypage-box .my-experience-box li .btn-box button.wide.active {
+  color: #ff43ca;
+  border-color: #ff43ca;
+}
+.mypage-box .my-experience-box li .btn-box .tool-tip-box {
+  position: absolute;
+  top: 35px;
+  right: -10px;
+  background-color: #ff43ca;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 18px;
+  line-height: 32px;
+}
+.mypage-box .my-experience-box li .btn-box .tool-tip-box div {
+  position: relative;
+  color: #fff;
+}
+.mypage-box .my-experience-box li .btn-box .tool-tip-box div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 32px;
+  width: 11px;
+  height: 10px;
+  background: url(../asset/images/img-bubble-triangle.png) no-repeat;
+}
+
+.mypage-box .my-experience-box li .date-box {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.mypage-box .my-experience-box li .date-box span {
+  font-size: 12px;
+  color: #ff43ca;
+}
+.mypage-box .my-experience-box li .date-box i {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 11px;
+  color: #eee;
+}
+
+.mypage-box .my-experience-box li + li {
+  margin-top: 30px;
+}
+
+.mypage-box .my-experience-box li.disabled p {
+  color: #b8bbbf;
 }
 
 .mypage-box .tab-box {
   background-color: #fff;
-  border-top: 1px solid #ebf0fb;
 }
 
 .mypage-box .tab-box button {
@@ -198,6 +315,111 @@
   font-weight: 700;
 }
 
+.mypage-box .my-experience-form {
+  padding-bottom: 60px;
+}
+
+.mypage-box .my-experience-form .info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.mypage-box .my-experience-form .info-box img {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-right: 15px;
+}
+.mypage-box .my-experience-form .info-box .name {
+  color: #979797;
+  font-size: 12px;
+  font-weight: 700;
+}
+.mypage-box .my-experience-form .info-box .title {
+  padding: 6px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.mypage-box .my-experience-form .info-box .date {
+  font-size: 12px;
+}
+.mypage-box .my-experience-form .form-box {
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.mypage-box .my-experience-form .form-item {
+  position: relative;
+}
+
+.mypage-box .my-experience-form .form-item + .form-item {
+  margin-top: 30px;
+}
+.mypage-box .my-experience-form .form-box .form-item-title {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.mypage-box .my-experience-form .form-box .form-item-title strong {
+  color: #ff43ca;
+}
+.mypage-box .my-experience-form .form-box .form-item-title i {
+  font-weight: 400;
+  color: #aeb2b9;
+}
+.mypage-box .my-experience-form .form-box .form-item-title-sub {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: #aeb2b9;
+  line-height: 24px;
+}
+.mypage-box .my-experience-form .form-box pre {
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-wrap;
+}
+
+.mypage-box .my-experience-form .form-box .btn-copy {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  font-size: 10px;
+}
+
+.mypage-box .my-experience-form .form-box textarea {
+  height: 80px;
+}
+.mypage-box .my-experience-form .form-box textarea:disabled {
+  background: #f6f9ff;
+}
+
+.mypage-box .my-experience-form .input-box {
+  position: relative;
+}
+
+.mypage-box .my-experience-form .input-box + .input-box {
+  margin-top: 10px;
+}
+
+.mypage-box .my-experience-form .input-box button {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+
 .mypage-page-wrap .floating-footer {
   position: fixed;
   bottom: 0;
@@ -211,6 +433,9 @@
   font-weight: 700;
   font-size: 16px;
   background-color: #2a3548;
+}
+.mypage-page-wrap .floating-footer button.active {
+  background-color: #ff43ca;
 }
 
 .mypage-page-wrap .floating-footer button:disabled {
@@ -373,4 +598,91 @@
   line-height: 60px;
   border-bottom: 1px solid #ebf0fb;
   background-color: #fff;
+}
+
+.mypage-content .join-completed-box {
+  padding-top: 80px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.mypage-content .join-completed-box img {
+  max-width: 335px;
+}
+.mypage-content .join-completed-box p {
+  padding: 30px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mypage-content .tracking-box {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.mypage-content .tracking-box dl + dl {
+  margin-top: 20px;
+}
+
+.mypage-content .tracking-box dt {
+  color: #68696b;
+  margin-bottom: 8px;
+}
+.mypage-content .tracking-box dd {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.mypage-content .tracking-box dd button {
+  position: absolute;
+  right: 0;
+  top: -34px;
+  background-color: #222;
+  color: #fff;
+  font-size: 10px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  border-radius: 4px;
+}
+
+.mypage-content .tracking-box p {
+  padding: 20px 0;
+  color: #68696b;
+  line-height: 20px;
+}
+.mypage-content .tracking-box .btn-tracking {
+  width: 100%;
+  height: 50px;
+  background-color: #ff43ca;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.mypage-content .no-traking-box {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+.mypage-content .no-traking-box div {
+  padding: 20px;
+}
+
+.mypage-content .no-traking-box div img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+.mypage-content .no-traking-box .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.mypage-content .no-traking-box .desc {
+  color: #68696b;
+  line-height: 20px;
 }
